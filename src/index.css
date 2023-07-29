@@ -22,3 +22,9 @@
 #root {
   background-color: #030627;
 }
+#root {
+  scroll-snap-type: y mandatory;
+}
+section {
+  scroll-snap-type: start;
+}

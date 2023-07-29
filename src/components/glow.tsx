@@ -1,4 +1,4 @@
-import { useAnimate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Glow(props: { children?: any; more: any }) {
   return (
@@ -19,7 +19,8 @@ function Glow(props: { children?: any; more: any }) {
         initial="hidden"
         animate="visible"
         id="glow"
-        className={`rounded-full opacity-50 mix-blend-hard-light blur-3xl bg-ctrColor1 w-80 h-80 absolute ${props.more}`}
+        style={{ translateY: -100 }}
+        className={`rounded-full opacity-50 mix-blend-hard-light blur-3xl bg-ctrColor1 w-80 h-80 fixed ${props.more}`}
       ></motion.div>
     </>
   );

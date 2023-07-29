@@ -1,11 +1,10 @@
-import About from "./pages/about";
 import Hero from "./pages/heroPage";
+import Us from "./pages/whyUs";
 
 function App() {
   return (
     <>
       <Hero />
-      <About />
     </>
   );
 }
